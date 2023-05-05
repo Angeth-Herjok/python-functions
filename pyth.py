@@ -41,7 +41,23 @@ print(highest_value([2,6,4,32]))
 def capitalized_string(names):
     # for name in names:
     #     if name in names:
-    #         name=name.capitalize()
+    #         name.capitalize()
     # return name
     return [name.capitalize() for name in names]
 print(capitalized_string(["hello","i","am","learning","python"]))
+
+def factorial(n):
+    if n<0:
+        return -1
+    elif n==0:
+        return 1
+    else:
+        factorial=1
+    for i in range(1,n+1):
+        factorial=factorial*i
+        return factorial
+print(factorial(5))
+
+
+# # to put string in multiple lines
+# ///my name is ///
